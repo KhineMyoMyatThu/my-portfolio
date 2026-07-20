@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Download } from 'lucide-react'
+import myPhoto from '../assets/myPhoto.jpg'
 const Hero = () => {
 
     return(
@@ -16,7 +17,7 @@ const Hero = () => {
                         <h1 className="pt-4 text-white font-bold text-4xl md:text-5xl lg:text-6xl">
                             Hi, I'm {" "}
 
-                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-200">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-300">
                                 KhineMyo
                             </span>
                         </h1> 
@@ -24,7 +25,25 @@ const Hero = () => {
                     <p className='text-gray-300 pt-8 text-center'>
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo minima quasi et suscipit nemo fugit sit aliquid praesentium laudantium amet cupiditate nihil, exercitationem sapiente assumenda sint consequatur magni dicta quidem!
                     </p>
+                    <button className="border-white border px-6 md:px-7 py-3 mt-3 rounded-full group w-full sm:w-max flex justify-center items-center gap-2 relative bg-white/5 hover:bg-cyan-500 transition-colors duration-200">
+                        <div className="svg-container">
+                            <Download size={18} className="text-white transition-colors duration-200 group-hover:text-white" />
+                        </div>
+                        <a href="/resume.pdf" download className="pl-2 text-white transition-colors duration-200 group-hover:text-white">
+                            Download Resume
+                        </a>
+                    </button>
+                </div>
+                <div className="lg:h-full md:flex">
+                    <div className="relative w-full h-96 min-h-full lg:min-h-[none] lg:w-full lg:h-full items-center">
 
+                        <div className="absolute z-0 top-1/2 -translate-y-1/2 w-5/6 right-0 h-[calc(80%+20px)] bg-linear-to-r from-[#0c64ac] to-primary opacity-25 blur-2xl"></div>
+
+                        <div className="absolute h-full z-10 p-2 top-1/2 -translate-y-1/2 lg:right-3 lg:right-40 sm:right-16 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] border border-cyan-500 shadow-lg ">
+
+                            <img src={myPhoto} alt="Khine Myo" width='500' height='auto' loading='lazy' className="object-cover w-full h-full  rounded-[30%_70%_70%_30%/30%_30%_70%_70%]" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
