@@ -1,4 +1,4 @@
-import { Calendar, GraduationCap, CheckCircle } from 'lucide-react';
+﻿import { Calendar, GraduationCap, CheckCircle } from 'lucide-react';
 import graduation from '../assets/graduation.png'
 
 const Education = () => {
@@ -21,7 +21,7 @@ const Education = () => {
     ];
   return (
     <section className="text-white py-20 overflow-hidden " id='education'>
-        <div className="max-w-6xl mx-auto px-6 lg:px-16">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="mb-16">
                 <p className=" text-cyan-500 text-sm uppercase tracking-widest mb-2 font-semibold">
                     Learning Path
@@ -47,7 +47,7 @@ const Education = () => {
                     </div>
                 </div>
 
-                <div className="w-full lg:w-8/12 space-y-8 mx-3" data-aos="fade-left">
+                <div className="w-full max-w-3xl mx-auto space-y-8" data-aos="fade-left">
                     {educationData.map((edu) => (
                         <div 
                         key={edu.id}
