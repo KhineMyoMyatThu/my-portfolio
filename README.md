@@ -1,16 +1,19 @@
-# React + Vite
+component => can create amall part of ui 
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+props => read only dada( can pass data form parent component to child component)
+syntax - const[count, setcount] = useState(0);
+count - current value
+secount - function
+0 in usestate(0) - initial value
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+i have learnt from Tailwind =>
+ 1. h-full, w-full
+ 2. translate (-)
+ 3. transition
+ 4. hover
+ 5. width-sizing
+ 6. height-sizing
+ 7. tracking-widest
+ 8. text-base (control font size and line height at th same time)
+ 9. leading-relaxed/number/custom name ()
