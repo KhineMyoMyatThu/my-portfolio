@@ -17,3 +17,5 @@ i have learnt from Tailwind =>
  7. tracking-widest
  8. text-base (control font size and line height at th same time)
  9. leading-relaxed/number/custom name ()
+ 10. for image-> w-full, object-cover
+ 11. focus:outline
