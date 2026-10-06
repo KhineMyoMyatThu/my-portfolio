@@ -1,41 +1,39 @@
-import {useState, useEffect} from 'react'
-import Navbar from './components/Navbar'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+import {useEffect} from 'react';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import Education from './components/Education';
+import Certificates from './components/Certificates';
+import AboutSection from './components/AboutSection';
+import Experience from './components/Experience';
+import Project from './components/Project';
+import ContactSection from './components/ContactSection';
+import Footer from './components/Footer';
 
 const App = () => {
 
-  const [darkmode, setDarkmode] = useState(true);
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 50,
+    });
+  }, []);
 
-
-
-useEffect(() => {
-
-  AOS.init({
-    duration: 1000,
-    once: true,
-    offset: 50,
-  });
-  document.documentElement.classList.add('dark');
-
-},[]);
-
-const toggleDarkMode = () => {
-  const newMode = !darkMode;
-  setDarkMode(newMode);
-  document.documentElement.classList.toggle('dark');
-}
-
-
-  return(
-    <div className={darkMode ?  'bg-linear-to-br from-gray-900 via-[#0d182e] to-gray-900 min-h-screen'
-      :'bg-linear-to-br from-gray-50 via-[#0d182e] to-blue-100 min-h-screen'
-    }>
-
-      <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode}/>
-
+  return (
+    <div className="bg-linear-to-br from-gray-900 via-[#0d182e] to-gray-900 min-h-screen">
+      <Navbar />
+      <Hero />
+      <Education/>
+      <Certificates/>
+      <AboutSection />
+      <Experience/>
+      <Project/>
+      <ContactSection/>
+      <Footer/>
     </div>
-  )
+  );
 }
 
 export default App
