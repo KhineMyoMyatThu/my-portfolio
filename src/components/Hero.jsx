@@ -1,10 +1,10 @@
-import React from 'react'
+﻿import React from 'react'
 import { Download } from 'lucide-react'
 import myPhoto from '../assets/myPhoto.jpg'
 const Hero = () => {
 
     return(
-        <section className= 'relative w-full' data-aos='zoom-in-up'> 
+        <section className= 'relative w-full' data-aos='zoom-in-up' id='home'> 
         <div className="absolute top-0 inset-x-0 h-64 flex items-start">
             <div className="h-24 w-2/3 bg-gradient-to-r from-[#0c7fac] blur-2xl opacity-40"></div>
             <div className="h-20 w-3/4 bg-gradient-to-r from-[#289eff] opacity-40 blur-2xl"></div>
